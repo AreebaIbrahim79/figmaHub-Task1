@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: absolute;
+  width: 1100px;
+  height: 72px;
+  font-weight: 600;
+
+}
+
+.navbar {
+  width: 100%;
+  height: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+.logo img {
+  width: 76px;
+  height: 42.75px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  margin-right: 40px;
+  align-items: center;
+}
+
+.nav-links li {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+
+.log {
+  margin-left: 80px;
+}
+
+.login-button {
+  display: block;
+}
+
+.login-button {
+  background-color: #d01c28;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: darkred;
+}
+
+.icon1,
+.icon2 {
+  position: absolute;
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.icon2 {
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-50%);
+}
+
+.icon1 {
+  top: 2rem;
+  right: 3rem;
+}
+
+#check {
+  display: none;
+}
+
+/* ******************************************************************** */
+.container {
+  width: 1, 125px;
+  height: 613px;
+  padding-top: 140px;
+  padding-left: 157px;
+
+}
+
+.tex-content h1 {
+  width: 595px;
+  height: 306px;
+  font-size: 80px;
+  line-height: 70px;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.tex-content .description {
+  width: 404px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #5A5959;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.shop-now {
+  width: 150px;
+  height: 41px;
+  font-weight: 600;
+  background-color: #d01c28;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  padding: 6px, 16px, 6px, 16px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.category {
+  width: 150px;
+  height: 41px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #5A5959;
+  font-size: 20px;
+  border: none;
+  padding: 6px, 16px, 6px, 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.available-on {
+  color: #5a5959;
+  font-weight: 400;
+  padding: 42px 0 0;
+  width: 250px;
+  height: 19px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.logos img {
+  height: 32px;
+  width: 32px;
+}
+
+.shoe-imag {
+  height: 487.06px;
+  width: 530px;
+  display: flex;
+  padding: 5rem 0;
+}
+
+.shoe-imag img {
+  height: 487.06px;
+  width: 590px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  text-align: center;
+  filter: drop-shadow(13px 25px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* *********************************************************************************** */
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .login {
+    margin-top: 10px;
+  }
+
+  .icon1,
+  .icon2 {
+    display: block;
+  }
+
+  #check:checked~.nav-links {
+    right: 0;
+  }
+
+
+
+  .login-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .login-button {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+
+  .nav-links li a {
+    padding: 16px;
+    font-size: 32px;
+  }
+
+  .nav-logo {
+    display: block;
+  }
+
+  .nav-logo img {
+    margin-left: 85px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 76px;
+    height: 42.75px;
+  }
+
+  .container {
+    width: 100%;
+    display: block;
+  }
+
+  .tex-content {
+    width: 100%;
+  }
+
+  .tex-content h1 {
+    font-size: 80px;
+    line-height: 90px;
+    text-align: center;
+  }
+
+  .tex-content .description {
+    width: 73%;
+    font-size: 16px;
+    padding: 32px 0;
+    line-height: 50px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .buttons {
+    gap: 32px;
+    flex-direction: column;
+    position: relative;
+    top: 544px;
+  }
+
+  .shop-now {
+    Width: 320px;
+    Font-size: 24px;
+    Padding: 8px 24px;
+  }
+
+  .category {
+    width: 320px;
+    font-size: 24px;
+    padding: 8px 24px;
+
+  }
+
+  .available-on {
+    padding: 32px 0 0;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 544px;
+  }
+
+  .logos {
+    gap: 40px;
+    padding: 32px 0 80px;
+    justify-content: center;
+    position: relative;
+    top: 544px;
+
+  }
+
+  .shoe-imag img {
+    width: 544px;
+    position: absolute;
+    top: 544px;
+    right: 80px;
+
+  }
+}
